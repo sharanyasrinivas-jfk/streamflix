@@ -23,6 +23,7 @@ cd backend
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+python manage.py makemigrations movies
 python manage.py migrate
 python manage.py seed           # loads sample movies
 python manage.py createsuperuser  # optional, for /admin
